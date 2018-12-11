@@ -11,6 +11,6 @@ This project was generated with [Vue](https://github.com/vuejs/vue) version 2.5.
 
 A Gary Simon tutorial was followed to create this app.
 
-The [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)was useful for debugging seeing what was happening with the state when Vuex was used.
+The [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) was useful for debugging and seeing what was happening with the state when Vuex was used.
 
-Link to: [A Vuex Tutorial by Example - Learn Vue State Management by Gary Simon - MAR 17, 2018](https://coursetro.com/posts/code/144/A-Vuex-Tutorial-by-Example---Learn-Vue-State-Management).
+Link to: [A Vuex Tutorial by Example - Learn Vue State Management by Gary Simon - mar 17, 2018](https://coursetro.com/posts/code/144/A-Vuex-Tutorial-by-Example---Learn-Vue-State-Management).
