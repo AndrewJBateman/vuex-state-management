@@ -2,11 +2,12 @@
   <div class="hello">
     <div class="left">
       <h1>{{ title }}</h1>
-
+			<!--add a form that uses as 'addLink' method-->
       <form @submit.prevent="addLink">
         <input class="link-input" type="text" placeholder="Add a Link" v-model="newLink" />
       </form>
 
+<!-- render mapState header and links in the template using the v-for function -->
       <ul>
         <li v-for="(link, index) in links" v-bind:key="index">
           {{ link }}
@@ -21,6 +22,8 @@
 </template>
 
 <script>
+// mapState is a helper to allow access to the state from Vuex 
+
 import Stats from '@/components/Stats.vue'
 import { mapState, mapMutations, mapActions } from 'vuex'
 
@@ -34,6 +37,8 @@ export default {
   components: {
     Stats
   },
+
+	// object spread operater added
   computed: {
     ...mapState([
       'title',

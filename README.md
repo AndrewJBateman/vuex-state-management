@@ -1,16 +1,106 @@
-# vuex-state-management
+# Angular Fast Http Caching
 
-Uses the Vue javascript framework with Vuex state management to create a simple webpage, add weblinks to a list and remove them using mutation. 
+Vue app to learn about state management using Vuex.
 
-Vuex designates a central location where the state data is stored, modified and accessed. Vuex is more suitable for larger Vue apps but the objective here was to learn how it works and then add to the app complexity later. 
+*** Note: to open web links in a new window use: _ctrl+click on link_**
 
-This project was generated with [Vue](https://github.com/vuejs/vue) version 2.5.17, [Vuex](https://github.com/vuejs/vuex) version 3.0.1 and [Vue CLI](https://github.com/vuejs/vue-cli) version 3.1.1
+## Table of contents
 
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Inspiration](#inspiration)
+* [Contact](#contact)
 
-## Notes
+## General info
 
-A Gary Simon tutorial was followed to create this app.
+* Uses the Vue javascript framework with Vuex state management to create a simple webpage, add weblinks to a list and remove them using mutation.
 
-The [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) was useful for debugging and seeing what was happening with the state when Vuex was used.
+* Vuex designates a central location where the state data is stored, modified and accessed. Vuex is more suitable for larger Vue apps but the objective here was to learn how it works and then add to the app complexity later.
 
-Link to: [A Vuex Tutorial by Example - Learn Vue State Management by Gary Simon - mar 17, 2018](https://coursetro.com/posts/code/144/A-Vuex-Tutorial-by-Example---Learn-Vue-State-Management).
+* Mutations are used for synchronous events. Actions are used for asynchronous events.
+
+## Screenshots
+
+![Example screenshot](./img/vuex-base-state.png).
+
+## Technologies
+
+* [Vue framework v2.6.10](https://vuejs.org/)
+
+* [Vuex v3.0.1](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
+
+* [Vue CLI v3.6.0](https://github.com/vuejs/vue-cli)
+
+* [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) was useful for debugging and seeing what was happening with the state when Vuex was used.
+
+## Setup
+
+Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+
+## Code Examples
+
+* extract from the `store.js` file, code for mutations and actions
+
+```javascript
+mutations: {
+    ADD_LINK: (state, link) => {
+      state.links.push(link)
+    },
+    REMOVE_LINK: (state, link) => {
+      state.links.splice(link, 1)
+    },
+
+    // remove all empties the array
+    REMOVE_ALL: (state) => {
+      state.links = []
+    }
+  },
+  actions: {
+    removeLink: (context, link) => {
+      context.commit("REMOVE_LINK", link)
+    },
+    removeAll({commit}) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          commit('REMOVE_ALL')
+          resolve()
+        }, 1500)
+      })
+    }
+  }
+
+```
+
+## Features
+
+* Vuex mutations used to add a payload 'link' to the links array in the `/src/store.js` file
+
+```javascript
+
+  mutations: {
+    ADD_LINK: (state, link) => {
+      state.links.push(link)
+    }
+  },
+
+```
+
+## Status & To-Do List
+
+* Status: Working app.
+
+* To-Do: add functionality.
+
+## Inspiration
+
+* [A Vuex Tutorial by Example - Learn Vue State Management by Gary Simon - mar 17, 2018](https://coursetro.com/posts/code/144/A-Vuex-Tutorial-by-Example---Learn-Vue-State-Management).
+
+* [Luuk Gruijs, Medium article, "Understanding, creating and subscribing to observables in Angular"](https://medium.com/@luukgruijs/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3)
+
+## Contact
+
+Created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
