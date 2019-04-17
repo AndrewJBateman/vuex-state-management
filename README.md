@@ -1,6 +1,6 @@
-# Angular Fast Http Caching
+# Vuex State Management
 
-Vue app to learn about state management using Vuex.
+* Vue app to learn about state management using Vuex.
 
 *** Note: to open web links in a new window use: _ctrl+click on link_**
 
@@ -31,7 +31,7 @@ Vue app to learn about state management using Vuex.
 
 * [Vue framework v2.6.10](https://vuejs.org/)
 
-* [Vuex v3.0.1](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
+* [Vuex v3.1.0](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
 
 * [Vue CLI v3.6.0](https://github.com/vuejs/vue-cli)
 
@@ -88,6 +88,8 @@ mutations: {
   },
 
 ```
+
+* [Promise.resolve()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) used in removeAll() function.
 
 ## Status & To-Do List
 
