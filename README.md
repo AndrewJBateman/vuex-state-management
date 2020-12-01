@@ -26,18 +26,19 @@
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/vuex-base-state.png).
+![Example screenshot](./img/vuex.png).
 
 ## :signal_strength: Technologies
 
 * [Vue framework v3](https://vuejs.org/)
-* [Vuex v3](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
+* [Vuex v2.6](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
 * [Vue CLI v4](https://github.com/vuejs/vue-cli)
 * [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) was useful for debugging and seeing what was happening with the state when Vuex was used.
 
 ## :floppy_disk: Setup
 
-Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+* Run `npm i` to install dependencies
+* Run `npm run serve` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
 ## :computer: Code Examples
 
@@ -91,8 +92,8 @@ mutations: {
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working.
-* To-Do: nothing
+* Status: Working
+* To-Do: Nothing
 
 ## :clap: Inspiration
 

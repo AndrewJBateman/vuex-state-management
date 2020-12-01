@@ -1,17 +1,17 @@
 // This file was generated as part of the Vuex option.
 
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
 	state: {
-		title: 'My Customised Title',
+		title: "My Customised Title",
 		links: [
-			'https://www.bbc.co.uk',
-			'https://www.yahoo.com',
-			'https://www.glitch.com',
+			"https://www.bbc.co.uk",
+			"https://www.yahoo.com",
+			"https://www.glitch.com",
 		],
 	},
 
@@ -36,12 +36,12 @@ export default new Vuex.Store({
 	},
 	actions: {
 		removeLink: (context, link) => {
-			context.commit('REMOVE_LINK', link);
+			context.commit("REMOVE_LINK", link);
 		},
 		removeAll({ commit }) {
 			return new Promise((resolve, reject) => {
 				setTimeout(() => {
-					commit('REMOVE_ALL');
+					commit("REMOVE_ALL");
 					resolve();
 				}, 1500);
 			});

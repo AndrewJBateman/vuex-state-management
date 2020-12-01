@@ -9,30 +9,28 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations, mapActions } from 'vuex'
+import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
-  name: 'Stats',
+  name: "Stats",
   data() {
     return {
-      msg: ''
-    }
+      msg: "",
+    };
   },
   computed: {
-    ...mapGetters([
-      'countLinks'
-    ]),
+    ...mapGetters(["countLinks"]),
   },
   methods: {
-    ...mapMutations(['REMOVE_ALL']),
-    ...mapActions(['removeAll']),
+    ...mapMutations(["REMOVE_ALL"]),
+    ...mapActions(["removeAll"]),
     removeAllLinks() {
       this.removeAll().then(() => {
-        this.msg = 'All links have been removed'
+        this.msg = "All links have been removed";
       });
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -52,12 +50,12 @@ a {
   color: #42b983;
 }
 button {
-    padding: 10px;
-    margin-top: 30px;
-    width: 100%;
-    background: none;
-    border: 1px solid lightgray;
-    outline: 0;
-    cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  width: 100%;
+  background: none;
+  border: 1px solid lightgray;
+  outline: 0;
+  cursor: pointer;
 }
 </style>
