@@ -1,8 +1,12 @@
 # :zap: Vuex State Management
 
 * Vue app to learn about state management using Vuex.
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-*** Note: to open web links in a new window use: _ctrl+click on link_**
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/vuex-state-management?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/vuex-state-management?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/vuex-state-management?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/vuex-state-management?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -16,6 +20,7 @@
   * [:cool: Features](#cool-features)
   * [:clipboard: Status & To-Do List](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -30,8 +35,8 @@
 
 ## :signal_strength: Technologies
 
-* [Vue framework v3](https://vuejs.org/)
-* [Vuex v2.6](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
+* [Vue framework v2](https://vuejs.org/)
+* [Vuex v3](https://github.com/vuejs/vuex) a central location from which state data is stored, modified and accessed.
 * [Vue CLI v4](https://github.com/vuejs/vue-cli)
 * [Vue DevTools extension for Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) was useful for debugging and seeing what was happening with the state when Vuex was used.
 
@@ -85,14 +90,13 @@ mutations: {
       state.links.push(link)
     }
   },
-
 ```
 
 * [Promise.resolve()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve) used in removeAll() function.
 
 ## :clipboard: Status & To-Do List
 
-* Status: Working
+* Status: Working. Updated june 2021.
 * To-Do: Nothing
 
 ## :clap: Inspiration
@@ -100,6 +104,10 @@ mutations: {
 * [A Vuex Tutorial by Example - Learn Vue State Management by Gary Simon - mar 17, 2018](https://coursetro.com/posts/code/144/A-Vuex-Tutorial-by-Example---Learn-Vue-State-Management).
 * [Luuk Gruijs, Medium article, "Understanding, creating and subscribing to observables in Angular"](https://medium.com/@luukgruijs/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3)
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) * you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
